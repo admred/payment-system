@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="content" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!--  https://picnicss.com  -->
+    <link rel="stylesheet" href="css/picnic.css">
+
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Honorarios</title>
+</head>
+<body class="page">
+    <header>
+        <nav class="demo">
+            <a href="#" class="brand">
+                <img class="logo" src="img/brand.png" />
+                <span>Honorarios</span>
+            </a>
+            <input id="bmenub" type="checkbox" class="show">
+            <label for="bmenub" class="burger pseudo button">menu</label>
+            <div class="menu">
+                <a href="index.html" class="pseudo button">Home</a>
+                <a href="pages/faq.html" class="pseudo button">FAQ</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Honorarios</h2>
+            <p>Calculo de remuneraci&oacute;n pretendida ajustada por inflaci&oacute;n y otros costos.</p>
+
+            <form action="" method="POST" id="form1" class="card p-1">
+                <label>Remuneraci&oacute;n prentendida mensual</label>
+                <input type="number" id="base" required>
+
+                <label>Inflaci&oacute;n promedio mensual sin el %</label>
+                <input type="number" id="inflation" required>
+
+                <label class="tooltip-top" data-tooltip="Lo que dura el contrato o servicio">Cantidad de meses</label>
+                <input type="number" id="months" required>
+                <label class="tooltip-top" data-tooltip="La suma total aprox. de los impuestos por mes: Monotributo, Rentas, Ganancias, etc">Inpuestos por mes (opcional)</label>
+                <input type="number" id="taxes">
+
+                <label>Demora de los pagos, el primer mes es 1. (opcional)</label>
+                <div id="late-container">
+                    <input type="text" id="late-id" pattern="([123456789]\d*|\s*)" placeholder="Mes..." class="tooltip-up" data-tooltip="El primer mes es 1">
+                    <input type="text" id="late-count" pattern="([123456789]\d*|\s*)" placeholder="Demora..." class="tooltip-up" data-tooltip="Cuandos meses se demor&oacute este pago">
+                    <input type="button" id="late-add" value="Add" class="button success late-action" >
+                </div>
+
+                <div class="buttons">
+                    <input type="submit" class="success" value="Calcular">
+                    <input type="reset" id="reset" class="button" value="Limpiar">
+                </div>
+            </form>
+        </section>
+        <section class="hide">
+            <h2>Cifra a pretender
+                <span class="bold">$</span>
+                <span class="field-result bold"></span>
+            </h2>
+            <h2>Mas detalle</h2>
+            <h3>Resumen</h3>
+            <table class="table primary" id="resume">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th data-tooltip="Monto por mes" class="tooltip-top">Monto</th>
+                        <th data-tooltip="Monto acumulado" class="tooltip-top">Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th data-tooltip="Cantidad prentendida inicial" class="tooltip-top" >Base</th>
+                        <td class="field-base"></td>
+                        <td class="field-base-acc"></td>
+                    </tr>
+                    <tr>
+                        <th class="tooltip-top" data-tooltip="Perdida por inflaci&oacute;n">Inflaci&oacute;n</th>
+                        <td class="field-comp tooltip-top" data-tooltip="Promedio"></td>
+                        <td class="field-comp-acc"></td>
+                    </tr>
+                    <tr>
+                        <th class="tooltip-top" data-tooltip="La suma total aprox. de los impuestos por mes: Monotributo, Rentas, Ganancias, etc">Impuestos</th>
+                        <td class="field-taxes"></td>
+                        <td class="field-taxes-acc"></td>
+                    </tr>
+                    <tr>
+                        <th data-tooltip="Monto base compensado por inflacion sin impuesto" class="tooltip-top">Compensaci&oacute;n</th>
+                        <td class="field-result-no-tax"></td>
+                        <td class="field-result-no-tax-acc"></td>
+                    </tr>
+                    <tr>
+                        <th data-tooltip="Monto final con impuesto" class="tooltip-top">Monto final</th>
+                        <td class="field-result"></td>
+                        <td class="field-result-acc"></td>
+                    </tr>
+                </tbody>
+            </table>
+            <h3>Evoluci&oacute;n de los cobros con impuesto base al primer mes.</h3>
+            <div id="evolution">
+                <!-- GENERATED TABLE -->
+            </div>
+
+            <h2>Cosas para hacer</h2>
+            <ul>
+                <li><s>Considerar carga impositiva</s></li>
+                <li>Considerar meses de demora del pago</li>
+                <li>Otros costos?</li>
+            </ul>
+        </section>
+    </main>
+    <footer></footer>
+    <script src="js/actions.js" rel="javascript"></script>
+</body>
+</html>
+

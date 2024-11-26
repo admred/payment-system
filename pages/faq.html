@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="content" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!--  https://picnicss.com  -->
+    <link rel="stylesheet" href="../css/picnic.css">
+
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>Honorarios</title>
+</head>
+<body class="page">
+    <header>
+        <nav class="demo">
+            <a href="#" class="brand">
+                <img class="logo" src="../img/brand.png" />
+                <span>Honorarios</span>
+            </a>
+            <input id="bmenub" type="checkbox" class="show">
+            <label for="bmenub" class="burger pseudo button">menu</label>
+
+            <div class="menu">
+                <a href="../index.html" class="pseudo button">Home</a>
+                <a href="faq.html" class="pseudo button">FAQ</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h3>¿A quien va dirigido?</h3>
+            <p>Principalmente al monotributista contratado.</p>
+
+            <h3>¿Cual es la idea?</h3>
+            <p>Conocer la perdida del poder adquisitivo en caso de que la propuesta laboral <u>no</u> incluye una cl&aacute;usula de ajuste por inflaci&oacute;n.</p>
+
+            <h3>¿Por qu&eacute; se incluye los impuestos?</h3>
+            <p>Se considera los impuestos por que tambien tienen una carga significativa sobre el sueldo, siendo contratado.</p>
+
+            <h3>¿Que regla usa para calcular los honorarios?</h3>
+
+            <p>La formula que utilizo yo es sueldo <span class="text-green">base</span> x <span class="text-red">inflaci&oacute;n</span> x <span class="text-blue">numero de mes</span> = <span class="text-violet">incremento</span>.</p>
+            <p></p>
+            <p><b>Por ejemplo:</b> Si el sueldo por mes es de 400000 pesos por mes, y la inflaci&oacute;n es del 10% (o sea 0.10), y los impuestos 15000 por mes.</p>
+
+            <p>Tengo:</p>
+            <ul class="clear">
+                <li>mes 0 es <span class="text-green">400000</span> x <span class="text-red">0.10</span> x <span class="text-blue">0</span> = <span class="text-violet">0</span></li>
+                <li>mes 1 es <span class="text-green">400000</span> x <span class="text-red">0.10</span> x <span class="text-blue">1</span> = <span class="text-violet">40000</span></li>
+                <li>mes 2 es <span class="text-green">400000</span> x <span class="text-red">0.10</span> x <span class="text-blue">2</span> = <span class="text-violet">80000</span></li>
+                <li>mes 3 es <span class="text-green">400000</span> x <span class="text-red">0.10</span> x <span class="text-blue">3</span> = <span class="text-violet">120000</span></li>
+                <li>mes 4 es <span class="text-green">400000</span> x <span class="text-red">0.10</span> x <span class="text-blue">4</span> = <span class="text-violet">160000</span></li>
+            </ul>
+            <p>Luego promedio estos incrementos y sumarlo a la monto inicial</p>
+            <p>Esto seria: (0 + 40000 + 80000 + 120000 + 160000) / 5 = 80000</p>
+            <p>Sumado a la pretenci&oacute;n inicial va ser 400000 + 80000 = 480000</p>
+
+            <h3>¿Y los impuestos?</h3>
+            <p>Por mes seria 15000 + 480000 = 495000</p>
+            <p>La cifra final a pretender serian: 495000 pesos x mes con impuestos incluidos.</p>
+
+            <h3>¿Como obtengo esos impuestos?</h3>
+            <p>Son aquellos relacionado su actividad econ&oacute;mica.</p>
+            <p>En Argentina principalmente son dos: Ingresos Brutos y Monotributo, pero tambien se puede a&ntilde;adir retenciones bancarias y otros cargos, lo que s&iacute;, tiene que ser un monto fijo y mensual.</p>
+
+            <h3>¿Que &iacute;ndice de inflaci&oacute;n puedo tomar?</h3>
+            <p>En mi caso tomo IPC pero usted puede tomar el "Dolar blue" u otro.</p>
+
+            <h3>¿Como computar los meses de pago atrasados?</h3>
+            <p>Por ahora estoy pensando como tratar este caso especifico.</p>
+            <p>Esta parte esta siendo desarrollada a&uacute;n.</p>
+
+            <p>Una idea es:</p>
+            <ol>
+                <li>La compensaci&oacute;n por inflaci&oacute;n se computa en el momento que se hace efectivo el pago.</li>
+                <li>Me queda ver como distribuyo esa compensaci&oacute;n a lo largo del contrato.</li>
+            </ol>
+            <h3>¿Como el empleado sabe a futuro los meses atrasados?</h3>
+
+            <p>El empleado ya puede haber trabajado antes o el empleador le menciona sobre la demora en los pagos.</p>
+            <p></p>
+        </section>
+    </main>
+    <footer></footer>
+</body>
+</html>
