@@ -1,6 +1,6 @@
 # Payment system
 ---
-### Payment system ajusted by inflation and other costs
+### Payment system ajusted by inflation
 
 This is a static web form, no server is needed for processing or storing data, just static server to send the page.
 
