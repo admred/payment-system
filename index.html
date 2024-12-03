@@ -40,7 +40,7 @@
 
                 <label class="tooltip-top" data-tooltip="Lo que dura el contrato o servicio">Cantidad de meses</label>
                 <input type="number" id="months" required>
-                <label class="tooltip-top" data-tooltip="La suma total aprox. de los impuestos por mes: Monotributo, Rentas, Ganancias, etc">Inpuestos por mes (opcional)</label>
+                <label class="tooltip-top" data-tooltip="La suma total aprox. de los impuestos por mes: Monotributo, Rentas, Ganancias, etc">Impuestos por mes (opcional)</label>
                 <input type="number" id="taxes">
 
                 <label>Demora de los pagos, el primer mes es 1. (opcional)</label>
@@ -57,48 +57,14 @@
             </form>
         </section>
         <section class="hide">
-            <h2>Cifra a pretender
-                <span class="bold">$</span>
-                <span class="field-result bold"></span>
-            </h2>
-            <h2>Mas detalle</h2>
-            <h3>Resumen</h3>
-            <table class="table primary" id="resume">
-                <thead>
-                    <tr>
-                        <th></th>
-                        <th data-tooltip="Monto por mes" class="tooltip-top">Monto</th>
-                        <th data-tooltip="Monto acumulado" class="tooltip-top">Total</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th data-tooltip="Cantidad prentendida inicial" class="tooltip-top" >Base</th>
-                        <td class="field-base"></td>
-                        <td class="field-base-acc"></td>
-                    </tr>
-                    <tr>
-                        <th class="tooltip-top" data-tooltip="Perdida por inflaci&oacute;n">Inflaci&oacute;n</th>
-                        <td class="field-comp tooltip-top" data-tooltip="Promedio"></td>
-                        <td class="field-comp-acc"></td>
-                    </tr>
-                    <tr>
-                        <th class="tooltip-top" data-tooltip="La suma total aprox. de los impuestos por mes: Monotributo, Rentas, Ganancias, etc">Impuestos</th>
-                        <td class="field-taxes"></td>
-                        <td class="field-taxes-acc"></td>
-                    </tr>
-                    <tr>
-                        <th data-tooltip="Monto base compensado por inflacion sin impuesto" class="tooltip-top">Compensaci&oacute;n</th>
-                        <td class="field-result-no-tax"></td>
-                        <td class="field-result-no-tax-acc"></td>
-                    </tr>
-                    <tr>
-                        <th data-tooltip="Monto final con impuesto" class="tooltip-top">Monto final</th>
-                        <td class="field-result"></td>
-                        <td class="field-result-acc"></td>
-                    </tr>
-                </tbody>
-            </table>
+            <hr>
+            <div class="center">
+                <h1>Cifra a pretender
+                    <span class="bold">$</span>
+                    <span class="field-result bold"></span>
+                </h1>
+            </div>
+            <hr>
             <h3>Evoluci&oacute;n de los cobros con impuesto base al primer mes.</h3>
             <div id="evolution">
                 <!-- GENERATED TABLE -->
@@ -116,4 +82,3 @@
     <script src="js/actions.js" rel="javascript"></script>
 </body>
 </html>
-
